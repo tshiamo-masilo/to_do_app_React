@@ -5,9 +5,19 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-script": "^2.0.5",
     "react-scripts": "0.9.5"
   },
-  "devDependencies": {},
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
